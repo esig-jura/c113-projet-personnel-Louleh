@@ -4,9 +4,9 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : …
-- Public cible : …
-- Objectifs du site : …
+- Thème choisi : Club de golf privé
+- Public cible : Amateurs de golf, membres potentiels
+- Objectifs du site : Informer sur les services, attirer de nouveaux membres, partager des actualités
 
 ### Fonctionnalités prévues
 - Navigation : …
