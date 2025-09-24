@@ -10,8 +10,8 @@
 
 ### Fonctionnalités prévues
 - Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Sections principales : Accueil, À propos, Evenements, Tarifs / cotisations, Contact
+- Contenus proposés : Textes, images, formulaire de contact
 
 ---
 
@@ -35,10 +35,10 @@
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de travail
-- IDE : …
-- Navigateurs de test : …
+- IDE : WebStorm
+- Navigateurs de test : Edge, Safari, Firefox
 - Versioning : Git + GitHub
-- Validation : Validator W3C, PageSpeed Insights, Wave
+- Validation : 
 
 ### Méthodologie
 - Approche mobile-first
@@ -47,12 +47,12 @@
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#XXXXXX` – …
-  - Couleur secondaire : `#XXXXXX` – …
-  - Couleur d’accent : `#XXXXXX` – …
-  - Couleur de texte : `#XXXXXX` – …
-  - Couleur de fond : `#XXXXXX` – …
-- Lien vers palette générée : …
+  - Couleur principale : `#F5F5F5` – …
+  - Couleur secondaire : `#2D4840` – …
+  - Couleur d’accent : `#C2A85D` – …
+  - Couleur de texte : `black & white` – …
+  - Couleur de fond : `#F5F5F5` – …
+- Lien vers palette générée : https://coolors.co/palette/2d4840-f5f5f5-c2a85d
 - Typographies :  
   - Titres : … (fichiers dans `/fonts`)  
   - Texte : … (fichiers dans `/fonts`)  
