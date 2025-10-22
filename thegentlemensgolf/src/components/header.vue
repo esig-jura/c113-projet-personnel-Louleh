@@ -78,7 +78,6 @@ header{
 
 .navItems {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   padding: 1rem;
