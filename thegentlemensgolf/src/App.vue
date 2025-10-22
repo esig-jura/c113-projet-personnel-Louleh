@@ -1,5 +1,6 @@
 <script setup>
 import Header from "@/components/header.vue";
+import Footer from "@/components/footer.vue";
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Header from "@/components/header.vue";
     <main class="main-content">
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
