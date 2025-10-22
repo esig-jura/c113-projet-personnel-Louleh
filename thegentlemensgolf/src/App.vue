@@ -23,6 +23,7 @@ import Header from "@/components/header.vue";
 }
 
 .main-content {
+  /*peut grandir, peut retrecir, prendre tout l'espace dispo peu importe la taille*/
   flex: 1;
 }
 

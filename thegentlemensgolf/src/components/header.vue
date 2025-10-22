@@ -93,7 +93,7 @@ button {
 }
 
 .navbar.expanded {
-  background-color: #1c1c1c;
+  background-color: var(--quaternary);
 }
 
 .slide-enter-active,
