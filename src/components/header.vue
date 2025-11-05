@@ -1,60 +1,62 @@
 <template>
   <header>
-    <nav class="navbar" :class="{ expanded: isMenuOpen && !isLargeScreen }">
+    <nav class="navbar" :class="{ expanded: isMenuOpen }">
       <div class="logo">
         <h1>The Gentlemen's Golf</h1>
       </div>
 
-      <div class="menu" v-if="!isLargeScreen">
+      <MenuDesktop
+          class="desktop-nav"
+          :items="navItems"
+          @navigate="goTo"
+      />
+
+      <div class="menu mobile-nav">
         <button @click="toggleMenu">
           {{ isMenuOpen ? '×' : '☰' }}
         </button>
       </div>
-
-      <div class="navItems" v-else>
-        <button @click="goTo('home')">Home</button>
-        <button @click="goTo('about')">About</button>
-        <button @click="goTo('membership')">Devenir membre</button>
-      </div>
     </nav>
 
-    <transition name="slide">
-      <div v-if="isMenuOpen && !isLargeScreen" class="navItems navSlide">
-        <button @click="goTo('home')">Home</button>
-        <button @click="goTo('about')">About</button>
-        <button @click="goTo('membership')">Devenir membre</button>
-      </div>
-    </transition>
+    <MenuMobile
+        class="mobile-nav"
+        :is-open="isMenuOpen"
+        :items="navItems"
+        @navigate="goTo"
+    />
+
   </header>
 </template>
 
 <script setup>
-
-import { useWindowSize } from '@vueuse/core'
-import {computed, ref} from 'vue'
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+
+import MenuDesktop from './menu/menuDesktop.vue'
+import MenuMobile from './menu/menuMobile.vue'
 
 const router = useRouter()
 
-const { width } = useWindowSize()
-const isLargeScreen = computed(() => width.value >= 768)
-
 const isMenuOpen = ref(false)
+
+const navItems = ref([
+  { label: 'Home', route: 'home' },
+  { label: 'About', route: 'about' },
+  { label: 'Devenir membre', route: 'membership' }
+])
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
 }
 
 function goTo(routeName) {
-  isMenuOpen.value = false;
+  isMenuOpen.value = false
   router.push({ name: routeName })
 }
-
 </script>
 
 <style scoped>
-
-header{
+header {
   background-color: var(--primary);
 }
 
@@ -66,25 +68,7 @@ header{
   color: var(--tertiary);
 }
 
-@media (max-width: 768px) {
-  .navItems {
-    flex-direction: column !important;
-  }
-
-  .navItems button{
-    font-size: small !important;
-  }
-}
-
-.navItems {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem;
-}
-
-button {
+.menu button {
   background: none;
   border: none;
   color: var(--tertiary);
@@ -96,27 +80,19 @@ button {
   background-color: var(--quaternary);
 }
 
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.4s ease;
-  overflow: hidden;
+.desktop-nav {
+  display: none;
+}
+.mobile-nav {
+  display: flex;
 }
 
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  max-height: 0px;
-}
-
-.slide-enter-to,
-.slide-leave-from {
-  opacity: 1;
-  max-height: 200px;
-}
-
-.navSlide {
-  background-color: var(--quaternary);
-  text-align: center;
-  padding: 1rem;
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
 }
 </style>
