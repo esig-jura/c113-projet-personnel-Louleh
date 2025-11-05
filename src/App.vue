@@ -19,8 +19,10 @@ import Footer from "@/components/footer.vue";
 }
 
 .layout {
+  /*flex = les enfants se placent sur une ligne directrice*/
   display: flex;
   flex-direction: column;
+  /*100% de la hauteur de la fenetre*/
   min-height: 100vh;
 }
 
