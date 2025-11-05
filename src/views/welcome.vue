@@ -30,7 +30,6 @@ import Tile from '@/components/tile.vue'
 <style scoped>
 * {
   color: var(--tertiary);
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
