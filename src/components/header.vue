@@ -87,12 +87,20 @@ header {
   display: flex;
 }
 
+.logo{
+  font-size: .8rem;
+}
+
 @media (min-width: 768px) {
   .desktop-nav {
     display: block;
   }
   .mobile-nav {
     display: none;
+  }
+
+  .logo{
+    font-size: 1rem;
   }
 }
 </style>

@@ -30,10 +30,4 @@ import Footer from "@/components/footer.vue";
   /*peut grandir, peut retrecir, prendre tout l'espace dispo peu importe la taille*/
   flex: 1;
 }
-
-@media (max-width: 600px) {
-  #app {
-    font-size: x-small;
-  }
-}
 </style>

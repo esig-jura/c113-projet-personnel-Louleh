@@ -40,8 +40,8 @@ button {
   background: none;
   border: none;
   color: var(--tertiary);
-  font-size: 1.5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .navSlide {
@@ -51,7 +51,7 @@ button {
 }
 
 .navItems button {
-  font-size: small !important;
+  font-size: 1.5rem;
 }
 
 .slide-enter-active,
