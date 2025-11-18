@@ -55,7 +55,7 @@ import Tile from '@/components/tile.vue'
   padding: 2rem 2rem;
   background-color: var(--primary);
   color: var(--black);
-  line-height: 1.7;
+  line-height: 1.3;
   text-align: center;
 }
 
