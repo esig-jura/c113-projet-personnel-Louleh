@@ -42,7 +42,8 @@ const isMenuOpen = ref(false)
 const navItems = ref([
   { label: 'Home', route: 'home' },
   { label: 'About', route: 'about' },
-  { label: 'Devenir membre', route: 'membership' }
+  { label: 'Devenir membre', route: 'membership' },
+  { label: 'Événements', route: 'events' }
 ])
 
 function toggleMenu() {
