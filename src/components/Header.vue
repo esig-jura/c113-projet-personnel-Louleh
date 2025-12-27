@@ -32,8 +32,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import MenuDesktop from './menu/menuDesktop.vue'
-import MenuMobile from './menu/menuMobile.vue'
+import MenuDesktop from './menu/MenuDesktop.vue'
+import MenuMobile from './menu/MenuMobile.vue'
 
 const router = useRouter()
 
