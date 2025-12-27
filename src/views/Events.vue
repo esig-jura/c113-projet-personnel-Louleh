@@ -12,13 +12,13 @@ import img2 from '../assets/images/gentlemens_1.png'
 
 const events = [
   {
-    Title: "Event 1",
-    Description: "Description for Event 1",
+    Title: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque",
+    Description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesqueLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque",
     Flyer: img1,
   },
   {
-    Title: "Event 2",
-    Description: "Description for Event 2",
+    Title: "Lorem ipsum dolor sit amet consectetur",
+    Description: "Adipiscing elit. Quisque faucibus ex sapien vitae",
     Flyer: img2,
   }
 ]

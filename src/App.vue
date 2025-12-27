@@ -7,7 +7,13 @@ import Footer from "@/components/footer.vue";
   <div id="app" class="layout">
     <Header />
     <main class="main-content">
-      <router-view />
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <div :key="$route.path">
+          <component :is="Component" />
+          </div>
+        </transition>
+      </router-view>
     </main>
     <Footer />
   </div>
@@ -29,5 +35,22 @@ import Footer from "@/components/footer.vue";
 .main-content {
   /*peut grandir, peut retrecir, prendre tout l'espace dispo peu importe la taille*/
   flex: 1;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

@@ -4,6 +4,7 @@
         v-for="item in items"
         :key="item.route"
         @click="$emit('navigate', item.route)"
+        :class="{ selected: route.name === item.route }"
     >
       {{ item.label }}
     </button>
@@ -11,6 +12,9 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
 defineProps({
   items: {
     type: Array,
@@ -28,7 +32,6 @@ defineEmits(['navigate'])
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
 }
 
 button {
@@ -37,5 +40,12 @@ button {
   color: var(--tertiary);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 2rem;
 }
+
+.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 </style>

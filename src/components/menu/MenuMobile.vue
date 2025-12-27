@@ -34,6 +34,7 @@ defineEmits(['navigate'])
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  flex-grow:1;
 }
 
 button {
@@ -48,15 +49,17 @@ button {
   background-color: var(--quaternary);
   text-align: center;
   padding: 1rem;
+  flex-grow: 1;
 }
 
 .navItems button {
-  font-size: 1.5rem;
+  font-size: 2.75rem;
+  width: 100%;
 }
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
@@ -69,6 +72,6 @@ button {
 .slide-enter-to,
 .slide-leave-from {
   opacity: 1;
-  max-height: 200px;
+  max-height: 300px;
 }
 </style>
