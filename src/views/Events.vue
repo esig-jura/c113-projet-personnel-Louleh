@@ -7,8 +7,8 @@
 <script setup>
 import Tile from '@/components/EventCard.vue'
 
-import img1 from '../assets/images/welcomePicture.png'
-import img2 from '../assets/images/gentlemens_1.png'
+import img1 from '../assets/images/welcomePicture.jpg'
+import img2 from '../assets/images/gentlemens_1.jpg'
 
 const events = [
   {

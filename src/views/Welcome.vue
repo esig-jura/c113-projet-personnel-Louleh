@@ -12,7 +12,7 @@ import Tile from '@/components/Tile.vue'
 
       <div class="welcome__hero">
         <img
-            src="@/assets/images/welcomePicture.png"
+            src="@/assets/images/welcomePicture.jpg"
             alt="Bienvenue au Gentlemen's Golf"
             class="welcome__image"
         />
