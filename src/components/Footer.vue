@@ -28,7 +28,7 @@ p, a{
 
 .footer-credit {
   text-align: right;
-  font-size: x-small;
+  font-size: small;
 }
 
 </style>

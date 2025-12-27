@@ -3,20 +3,20 @@ import Tile from '@/components/tile.vue'
 </script>
 
 <template>
-  <section class="welcome__hero">
-    <img
-        src="@/assets/images/welcomePicture.png"
-        alt="Bienvenue au Gentlemen's Golf"
-        class="welcome__image"
-    />
-  </section>
-
   <section class="welcome__content">
     <div class="container">
       <h1 class="welcome__title">Bienvenue au Gentlemen's Golf</h1>
       <p class="welcome__text">
         Un club privé où le golf se joue avec style, respect et tradition.
       </p>
+
+      <div class="welcome__hero">
+        <img
+            src="@/assets/images/welcomePicture.png"
+            alt="Bienvenue au Gentlemen's Golf"
+            class="welcome__image"
+        />
+      </div>
 
       <div class="welcome__grid">
         <Tile to="/about" label="Découvrir le club" />
@@ -34,20 +34,29 @@ import Tile from '@/components/tile.vue'
   padding: 0;
 }
 
-.welcome__hero{
-  width: 100%;
-}
-
 .welcome__image {
   width: 100%;
   height: auto;
-  display: block;
+  border-radius: 1em;
+  border: 5px solid var(--tertiary);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.welcome__hero {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .welcome__image {
     max-height: 500px;
-    object-fit: cover;
+    width: auto;
+    border-radius: 1em;
+    border: 5px solid var(--tertiary);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  }
+  .welcome__hero {
+    display: flex;
+    justify-content: center;
   }
 }
 
