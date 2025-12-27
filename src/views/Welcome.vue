@@ -1,5 +1,5 @@
 <script setup>
-import Tile from '@/components/tile.vue'
+import Tile from '@/components/Tile.vue'
 </script>
 
 <template>
