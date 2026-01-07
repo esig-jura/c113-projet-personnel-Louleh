@@ -21,13 +21,13 @@
       <h2 class="subtitle">Contact</h2>
       <ul class="dash-list">
         <li>
-          Tél : 00000000000
+          Tél : +00 00 000 00 00
         </li>
         <li>
           Email : test@test.test
         </li>
         <li>
-          Personne de contact : .......
+          Personne de contact : Bob
         </li>
       </ul>
     </div>

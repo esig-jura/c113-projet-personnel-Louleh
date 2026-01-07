@@ -4,7 +4,7 @@
       <h2 class="event__title">{{ label }}</h2>
     </div>
     <div class="container__body">
-      <img :src="img" alt="" />
+      <img :src="img" alt="Photo de couverture de l'événement." />
     </div>
     <div>
       <p class="event__description">{{ description }}</p>

@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar" :class="{ expanded: isMenuOpen }">
       <div class="logo">
-        <h1>The Gentlemen's Golf</h1>
+        The Gentlemen's Golf
       </div>
 
       <MenuDesktop
@@ -13,7 +13,7 @@
 
       <div class="menu mobile-nav">
         <button @click="toggleMenu">
-          {{ isMenuOpen ? '×' : '☰' }}
+          {{ isMenuOpen ? 'X' : '☰' }}
         </button>
       </div>
     </nav>
@@ -40,7 +40,7 @@ const router = useRouter()
 const isMenuOpen = ref(false)
 
 const navItems = ref([
-  { label: 'Home', route: 'home' },
+  { label: 'Home', route: 'Home' },
   { label: 'About', route: 'about' },
   { label: 'Devenir membre', route: 'membership' },
   { label: 'Événements', route: 'events' }
@@ -89,7 +89,8 @@ header {
 }
 
 .logo{
-  font-size: .8rem;
+  font-size: 1.5rem !important;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +102,8 @@ header {
   }
 
   .logo{
-    font-size: 1rem;
+    font-size: 2rem !important;
+    font-weight: bold;
   }
 }
 </style>
