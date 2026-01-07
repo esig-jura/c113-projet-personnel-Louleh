@@ -1,10 +1,31 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import { useHead } from '@unhead/vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+useHead({
+  title: () => route.meta.title || 'The Gentlemen\'s Golf',
+
+  titleTemplate: (title) => title ? `${title} | The Gentlemen's Golf` : 'The Gentlemen\'s Golf',
+
+  meta: [
+    {
+      name: 'description',
+      content: () => route.meta.description || 'Bienvenu sur le site officiel du Gentlemen\'s Golf, un club de golf exclusif dédié aux passionnés de golf. Découvrez nos parcours prestigieux, nos événements exclusifs et notre communauté de membres triés sur le volet. Rejoignez-nous pour une expérience de golf inégalée alliant tradition, élégance et convivialité.'
+    },
+    {
+      property: 'og:title',
+      content: () => route.meta.title
+    }
+  ]
+})
 </script>
 
 <template>
-  <div id="app" class="layout">
+  <div class="layout">
     <Header />
     <main class="main-content">
       <router-view v-slot="{ Component }">
@@ -20,6 +41,7 @@ import Footer from "@/components/Footer.vue";
 </template>
 
 <style scoped>
+
 #app{
   background-color: var(--primary);
 }
