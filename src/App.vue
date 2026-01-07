@@ -28,12 +28,12 @@ import Footer from "@/components/Footer.vue";
   /*flex = les enfants se placent sur une ligne directrice*/
   display: flex;
   flex-direction: column;
-  /*100% de la hauteur de la fenetre*/
+  /*100% de la hauteur de la fenêtre*/
   min-height: 100vh;
 }
 
 .main-content {
-  /*peut grandir, peut retrecir, prendre tout l'espace dispo peu importe la taille*/
+  /*peut grandir, peut rétrécir, prendre tout l'espace dispo peu importe la taille*/
   flex: 1;
 }
 
