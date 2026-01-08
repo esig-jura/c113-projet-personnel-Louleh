@@ -15,6 +15,7 @@ import Tile from '@/components/Tile.vue'
             src="@/assets/images/welcomePicture.jpg"
             alt="Bienvenue au Gentlemen's Golf"
             class="welcome__image"
+            loading="lazy"
         />
       </div>
 
