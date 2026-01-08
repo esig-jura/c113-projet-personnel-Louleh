@@ -56,7 +56,7 @@
   - Couleur quatrième : `#2b2b2b
   - Couleur de texte : `black & white`
   - Couleur de fond : `#F5F5F5`
-- Lien vers palette générée : https://coolors.co/palette/2d4840-f5f5f5-c2a85d
+- Lien vers palette générée : https://coolors.co/palette/2d4840-f5f5f5-dec16b-2b2b2b
 - Typographies :  
   - Titres : Merriweather (fichiers dans `/fonts`)  
   - Texte : Merriweather (fichiers dans `/fonts`)  
@@ -69,15 +69,15 @@
 - HTML Validator : Aucunes erreurs ✅
 - CSS Validator : Aucunes erreurs ✅
 - PageSpeed Insights mobile :  
-  - Performance : 98/100  
+  - Performance : 99/100  
   - Accessibilité : 100/100  
-  - Bonnes pratiques : 81/100  
+  - Bonnes pratiques : 100/100  
   - SEO : 100/100 
 
 - PageSpeed Insights bureau :
-    - Performance : 87/100
+    - Performance : 100/100
     - Accessibilité : 100/100
-    - Bonnes pratiques : 81/100
+    - Bonnes pratiques : 100/100
     - SEO : 100/100
 
 ### Compatibilité
@@ -101,6 +101,7 @@
   - Validation du code écrit à la main.
   - Suggestions d'améliorations pour le design.
   - Reformatage du code pour une meilleure lisibilité.
+  - Mise en place du déploiement avec un workflow GitHub Actions (fichier deploy.yml).
 
 ### Utilisation détaillée
 - Contenu généré avec l’IA :
@@ -119,11 +120,12 @@
 
 ### Ce que j’ai appris
 - Compétences techniques acquises
-  - Animations avec vuejs.
+  - Animations avec Vue.Js.
+  - Déploiement d'un site Vue.Js sur GitHub Pages via GitHub Actions.
 - Découvertes surprenantes
-  - 
+  - La possibilité de déployer un site Vue.Js directement sur GitHub Pages. Je pensais qu'il fallait obligatoirement un serveur.
 - Concepts difficiles maîtrisés
-    - Vuejs Components et Props
+    - Vue.Js Components et Props
 
 ### Difficultés rencontrées
 - Problèmes techniques et solutions trouvées 
@@ -147,4 +149,4 @@
 - Fonctionnalités bonus envisagées
   - Possibilité d'inscription en ligne pour devenir membre.
 - Compétences à approfondir
-    - VueJs avancé et animations.
+    - Vue.Js avancé et animations.
