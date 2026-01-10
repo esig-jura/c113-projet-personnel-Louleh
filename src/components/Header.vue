@@ -93,7 +93,7 @@ header {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .desktop-nav {
     display: block;
   }
@@ -102,7 +102,7 @@ header {
   }
 
   .logo{
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
     font-weight: bold;
   }
 }
